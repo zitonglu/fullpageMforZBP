@@ -20,7 +20,10 @@ body{
 }
 a{text-transform:none;text-decoration:none;} 
 a:hover{text-decoration:underline;}
-
+h1{font-size:26px;}
+h2{font-size:20px;}
+.left{text-align:left}
+.right{text-align:right}
 
 /*HomePage css*/
 .footer1{
@@ -46,7 +49,7 @@ a:hover{text-decoration:underline;}
     bottom:4vh;
     left: 0;
     margin: 0 auto;
-    border-radius:6px;
+    border-radius:8px;
     width:460px;
     text-align: center;
     overflow: hidden;
@@ -84,6 +87,25 @@ a:hover{text-decoration:underline;}
             filter: blur(2px);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
 }
+.text1{
+    margin-top:8vh;
+    margin-right:2vh;
+    margin-left:2vh;
+}
+.text1 nav{
+    margin-top:2vh;
+    list-style:none;
+}
+.text1 nav li{
+    list-style-type:none;
+    display:inline;
+    padding-right:1em;
+    padding-left:1em;
+    border-left: solid 1px rgba(60,60,60,.5);
+}
+.text1 nav li:first-child{border-left:none;}
+.text1 nav li a{font-size:20px;}
+
 @media (max-width: 480px){
     .HomeBlog{
         right: 4vw;
@@ -92,4 +114,5 @@ a:hover{text-decoration:underline;}
     }
     .avatarImg{width: 26vw;}
     .footer1 p,.footer1 p a{font-size:1.2vw;}
+    .text1 nav li a{font-size:3vw}
 }
