@@ -24,16 +24,12 @@ a:hover{text-decoration:underline;}
 
 
 /*HomePage css*/
-
-#HomePage .bg{
-    width:100%;
-    height:100%;
-}
 .footer1{
     position: fixed;
     bottom: 3vw;
     width: 100%;
     text-align:center;
+    width:100%;
 }
 .footer1 p{
     font-size:1.2vw;
@@ -41,4 +37,31 @@ a:hover{text-decoration:underline;}
 }
 .footer1 p a{
     color:rgb(51, 122, 183);
+}
+.HomeBlog{
+    position: absolute;
+    background: #ddff11;
+    top: 2vw;
+    right: 2vw;
+    bottom: 15vw;
+    left: 2vw;
+    border-radius:6px;
+    text-align: center;
+    overflow: hidden;
+}
+.avatarImg{
+    position: absolute;
+    top: 24vw;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 1.6vw;
+    width: 26vw;
+    height: auto;
+    background: rgba(255,255,255,.4);
+    border-radius: 50%;
+}
+.headerImg{
+    height:22vh;
+    background: url(http://www.fengyan.cc/zb_users/upload/2016/02/201602111455160910856280.jpg) bottom center no-repeat;
 }
