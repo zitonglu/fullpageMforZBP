@@ -12,4 +12,8 @@
     font-size: 1.5625vw;
     font-family: "Microsoft Yahei";
 }
-html{background:;}
+html,
+body{
+    height: 100%;
+    overflow: hidden;
+}
