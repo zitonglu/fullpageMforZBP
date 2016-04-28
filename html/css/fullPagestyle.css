@@ -24,6 +24,7 @@ h1{font-size:26px;}
 h2{font-size:20px;}
 .left{text-align:left}
 .right{text-align:right}
+.clearfix:after{content:" ";display:block;clear:both;}
 
 /*HomePage css*/
 .footer1{
@@ -104,7 +105,7 @@ h2{font-size:20px;}
     border-left:solid 1px rgba(60,60,60,.5);
 }
 .text1 nav li:first-child{border-left:none;}
-.text1 nav li a{font-size:18px;}
+.text1 nav li a{font-size:16px;}
 .blogText1{
     margin-top:2vh;
     margin-bottom:2vh;
@@ -146,7 +147,55 @@ h2{font-size:20px;}
     padding-bottom:.15vh;
     font-size: 4.2vw;
 }
-.control-label-box,.control-input-box,.form-control-box,.control-button-box{font-size:20px;}
+.control-label-box,.control-input-box,.form-control-box,.control-button-box{font-size:16px;}
+/*slide css*/
+.slide{background:#ddd}
+.blogtext{
+    background:#fff;
+    padding:10px 24px 10px 24px;
+    overflow:hidden; 
+    height:85vh;
+}
+.blogtext .title>img:first-child{
+    width: 15.625vw;
+    border-radius: 50%;
+    float: left;
+}
+.blogtext .title h1{
+    font-size:5.5vw;
+    margin-left:19vw;
+}
+.blogtext .title p{
+    margin-left:19vw;
+    color: #bbb;
+}
+.blogtext .title p a{color: #bbb;}
+.blogtext .blog{margin-top:3vh;}
+.blogtext .blog p,
+.blogtext .blog p a,
+.blogtext .blog ul li,
+.blogtext .blog ol li{
+    font-size:16px;
+}
+.blogtext .blog p{line-height:24px;}
+.blogtext .blog p a{color:#2f6f9f}
+.blogtext .blog p img,.blogtext .blog p a img{max-width: 100%;height: auto;}
+.blogtext .blog ul,
+.blogtext .blog ol{
+    margin-left: 2em;
+}
+.blogbottom{
+    height: 3.2vh;
+    background:#fff;
+    text-align: center;
+    border-top: solid 1px rgba(60,60,60,.5);
+}
+.blogbottom,
+.blogbottom p,
+.blogbottom p a{
+    font-size: 2.18vh;
+    color:#2f6f9f;
+}
 
 @media (max-width: 415px){
     .HomeBlog{
