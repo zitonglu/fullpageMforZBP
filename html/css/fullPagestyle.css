@@ -221,14 +221,14 @@ h2{font-size:20px;}
   font-size: 20px;
   border-radius: 8px;
 }
-
+/*commettext*/
+.commettext p{
+    line-height: 24px;
+    color: #333;
+}
 
 @media (max-width: 415px){
-    .HomeBlog{
-        right: 4vw;
-        left: 4vw;
-        width:auto;
-    }
+    .HomeBlog{right: 4vw;left: 4vw;width:auto;}
     .headerImg{height:100px}
     .avatarImg{width: 26vw;padding:5px;top:40px;}
     .footer1 p,.footer1 p a{font-size:1.2vh;}
@@ -239,4 +239,5 @@ h2{font-size:20px;}
     .blogtext .title h1{font-size:5.5vw;margin-left:19vw;}
     .blogtext .title p{margin-left:19vw;font-size: 1.5625vw;}
     .blogtext .title p a{font-size:1.5625vw;}
+    .commettext p{font-size:16px}
 }
