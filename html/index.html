@@ -180,7 +180,11 @@
 <script type="text/javascript">
 	$(document).ready(function(){
         $("#index-body").fullpage({
-        controlArrows:false        	
+        controlArrows:false,
+        anchors:['home','list','comments'],
+        loopBottom:true,
+        navigation:true,
+        slidesNavigation:true
         });
     });
 </script>
