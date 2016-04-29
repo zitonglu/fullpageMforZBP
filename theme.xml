@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>fullpagestyle</id>
+<name>可以滑动的</name>
+<url>http://www.paipk.com/</url>
+<note>可以滑动的</note>
+<description>zblogPHP主题“可以滑动的”模版.由蟹胖设计和制作.</description>
+<path></path>
+<include></include>
+<level>1</level>
+<author>
+  <name>蟹胖</name>
+  <email>paipk@paipk.com</email>
+  <url>http://www.paipk.com/</url>
+</author>
+<source>
+  <name>蟹胖</name>
+  <email>paipk@paipk.com</email>
+  <url>http://www.paipk.com/</url>
+</source>
+<adapted>140614</adapted>
+<version>1.5</version>
+<pubdate>2016-04-29</pubdate>
+<modified>2016-05-06</modified>
+<price></price>
+<advanced>
+  <dependency>sf_img1</dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+</sidebars>
+</theme>
