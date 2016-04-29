@@ -80,7 +80,7 @@
 					</div>
 				</div>
 				<div class="blogbottom">
-					<p><a href="#">点赞</a> <a href="#">分享</a> <a href="#">点击进入</a></p>
+					<p><a href="#">点击浏览</a></p>
 				</div>
 			</div>
 			<div class="slide">
@@ -107,50 +107,81 @@
 					</div>
 				</div>
 				<div class="blogbottom">
-					<p><a href="#">点赞</a> <a href="#">分享</a> <a href="#">点击进入</a></p>
+					<p><a href="#">点击浏览</a></p>
 				</div>
 			</div>
 			<div class="slide">
-				<div class="pagebar3">
-					<li><a href="#">‹‹</a></li>
-					<li><a href="#">‹</a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#">›</a></li>
-					<li><a href="#">››</a></li>
+				<div class="pagination-box">
+					<nav>
+						<ul class="pagination">
+							<li><a href="#)">‹‹</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">›</a></li>
+							<li><a href="#">››</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 		<div class="section">
-			<div class="blogtext">
-				<div class="title">
-					<img src="images/a.jpg" alt="博客消息">
-					<h1>博客列表标题</h1>
-					<p>2016-04-28 <a href="#">标签1</a> <a href="#">标签2</a> <a href="#">标签3</a></p>
-					<p class="commettext">博客的内容介绍，包含图片之类的玩意吗？这还有待决定博客的内容介绍，</p>
+			<div class="comments">
+				<aside class="comment-list">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="images/a.jpg" alt="博客消息"></a>
+					</div>
+					<div class="media-body">
+						<h2>博客列表标题</h2>
+						<p>博客的内容介绍，包介绍，</p>
+							<div class="media-left">
+								<a href="#"><img src="images/a.jpg" alt="博客消息"></a>
+							</div>
+							<div class="media-body">
+								<h2>博客列表标题</h2>
+								<p>博客的内容介绍，包含图片之类的玩意吗？这还有待决定博客的内容介绍，</p>
+							</div>
+					</div>
 					<div class="clearfix"></div>
 				</div>
-				<div class="title">
-					<img src="images/a.jpg" alt="博客消息">
-					<h1>博客列表标题</h1>
-					<p>2016-04-28 <a href="#">标签1</a> <a href="#">标签2</a> <a href="#">标签3</a></p>
-					<p class="commettext">博客的内容介绍，包含图片之类的玩意吗？这还有待决定博客的内容介绍，</p>
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="images/a.jpg" alt="博客消息"></a>
+					</div>
+					<div class="media-body">
+						<h2>博客列表标题</h2>
+						<p>博客的内容介绍，包介绍，</p>
+							<div class="media-left">
+								<a href="#"><img src="images/a.jpg" alt="博客消息"></a>
+							</div>
+							<div class="media-body">
+								<h2>博客列表标题</h2>
+								<p>博客的内容介绍，包含图片之类的玩意吗？这还有待决定博客的内容介绍，</p>
+							</div>
+					</div>
 					<div class="clearfix"></div>
+				</div>
+				</aside>
+				<div class="comments-pagebar">
+					<nav>
+						<ul class="pagination">
+							<li><a href="#)">‹‹</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">›</a></li>
+							<li><a href="#">››</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-		</div>
-		<div class="section">
-			<h1>4</h1>
-		</div>
-		
+		</div><!-- end section -->
 	</div>
 </body>
 <script type="text/javascript">
-    $(function() {
-        $("#index-body").fullpage();
+	$(document).ready(function(){
+        $("#index-body").fullpage({
+        controlArrows:false        	
+        });
     });
 </script>
 

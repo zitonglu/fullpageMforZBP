@@ -149,13 +149,13 @@ h2{font-size:20px;}
 }
 .control-label-box,.control-input-box,.form-control-box,.control-button-box{font-size:16px;}
 /*slide css*/
-.slide{background:#ddd}
+
 .blogtext{
     background:#fff;
     padding:10px 24px 10px 24px;
     overflow:hidden; 
     height:85vh;
-    max-width:480px;
+    max-width:600px;
     margin:0 auto;
 }
 .blogtext .title>img:first-child{
@@ -163,7 +163,8 @@ h2{font-size:20px;}
     border-radius: 50%;
     float: left;
 }
-.blogtext .title h1{
+.blogtext .title h1
+{
     margin-left:100px;
 }
 .blogtext .title p{
@@ -200,31 +201,77 @@ h2{font-size:20px;}
     font-size: 2.18vh;
     color:#2f6f9f;
 }
+/*commenttext*/
+.comments{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width:600px;
+    margin: 0 auto;
+}
+.comment-list{
+    max-height:80vh;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    overflow: hidden;
+}
+.comment-list h2{
+    color:#428bca;
+}
+.commentbox .commenttext{
+    width: 100%;
+    padding-left: 100px;
+}
+.media-left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+}
+.media-left,
+.media-body{
+  display: table-cell;
+  vertical-align: top;
+}
+.media-left{
+    padding-right:10px; 
+}
+.media-body p{
+    padding-bottom:10px;
+    font-size:16px;
+}
 /*pagebar*/
-.pagebar3{
-    max-width: 440px;
-    margin:auto;
-    text-align:center;
+.comments-pagebar{
+    height: 10vh;
 }
-.pagebar3 li{
-    list-style: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
 }
-.pagebar3 li a{
+.pagination>li {
+  display: inline;
+}
+.pagination>li>a{
+  position: relative;
+  float: left;
   padding: 6px 12px;
+  margin-left: -1px;
   line-height: 1.42857143;
   color: #428bca;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
-  font-size: 20px;
-  border-radius: 8px;
 }
-/*commettext*/
-.commettext p{
-    line-height: 24px;
-    color: #333;
+.pagination>.active>a{
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.pagination-box{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (max-width: 415px){
@@ -238,6 +285,6 @@ h2{font-size:20px;}
     .blogtext .title>img:first-child{width: 15.625vw;}
     .blogtext .title h1{font-size:5.5vw;margin-left:19vw;}
     .blogtext .title p{margin-left:19vw;font-size: 1.5625vw;}
-    .blogtext .title p a{font-size:1.5625vw;}
-    .commettext p{font-size:16px}
+    .blogtext .title p a,.media-body p{font-size:1.5625vw;}
+    
 }
