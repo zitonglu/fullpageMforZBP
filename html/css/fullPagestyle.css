@@ -114,10 +114,12 @@ h2{font-size:20px;}
 }
 /*评论内容*/
 .content1{
-    margin:.2vh -4vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
     background-color: #ddd;  
+}
+.content1box{
+    margin:.2vh -4vw;
 }
 .content1-list{margin-bottom:1.2vh; }
 .control-label-box{
@@ -305,6 +307,7 @@ h2{font-size:20px;}
 .postbox ol{
     padding-left: 2em;
 }
+.commentinput{text-align: center;max-width:740px;margin:auto;}
 
 @media (max-width: 415px){
     .HomeBlog{right: 4vw;left: 4vw;width:auto;}
