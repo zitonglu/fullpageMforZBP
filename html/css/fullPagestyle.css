@@ -9,14 +9,8 @@
     margin: 0;
     padding:0;
     border: none;
-    font-size: 1.5625vw;
     font-family: "Microsoft Yahei";
     color: #333;
-}
-html,
-body{
-    height: 100%;
-    overflow: hidden;
 }
 a{text-transform:none;text-decoration:none;} 
 a:hover{text-decoration:underline;}
@@ -25,8 +19,12 @@ h2{font-size:20px;}
 .left{text-align:left}
 .right{text-align:right}
 .clearfix:after{content:" ";display:block;clear:both;}
-
 /*HomePage css*/
+.body{
+    height: 100%;
+    overflow:hidden;
+}
+#index-body{font-size: 1.5625vw}
 .footer1{
     position:absolute;
     right: 0;
@@ -182,7 +180,7 @@ h2{font-size:20px;}
 }
 .blogtext .blog p{line-height:24px;}
 .blogtext .blog p a{color:#2f6f9f}
-.blogtext .blog p img,.blogtext .blog p a img{max-width: 100%;height: auto;}
+.blogtext .blog p img,.blogtext .blog p a img,.postbox img{max-width: 100%;height: auto;}
 .blogtext .blog ul,
 .blogtext .blog ol{
     margin-left: 2em;
@@ -274,6 +272,39 @@ h2{font-size:20px;}
     padding-right: 20px;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span{background:#428bca} 
+/*post*/
+.postbox{
+    max-width:800px;
+    margin:auto;
+    margin-top: 2vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #dadde3;
+}
+.posttitle h1,
+.posttitle p{
+    text-align: center;
+    margin:auto;
+}
+.posttitle p{
+    padding-top:1.2vh; 
+    padding-bottom:1.2vh;
+    color: #a8a8a8;
+    font-size: 12px;
+    border-bottom: 1px dashed #dadde3;
+}
+.postbox a{color:#428bca;}
+.postbox>p,
+.postbox ul,
+.postbox ol{
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+.postbox ul,
+.postbox ol{
+    padding-left: 2em;
+}
 
 @media (max-width: 415px){
     .HomeBlog{right: 4vw;left: 4vw;width:auto;}
