@@ -30,12 +30,12 @@
 							<input type="text" name="inpHomePage" id="inpHomePage" placeholder="http://"  tabindex="4" class="control-input-box">
 							<button class="control-button-box">留言</button>
 						</div>
-					</div>
+					</div><!-- 未完成 -->
 					</div>
 				</div>
 				<div class="footer1">
-					<p><a href="">站长统计</a> 苏ICP备09094874号-2 .<a href="">登录</a></p>
-					<p>Powered By <a href="">Z-BlogPHP</a>.Theme by <a href="">Paipk.com</a>.</p>
+					<p>{$copyright} {if $user.ID>0}.<a href="{$host}zb_system/admin/?act=admin" rel="nofollow" title="后台管理">管理</a>{else}.<a href="{$host}zb_system/cmd.php?act=login" rel="nofollow" title="登录管理">登录</a>{/if}</p>
+					<p>Powered By {$zblogphpabbrhtml}.Theme by <a href="http://www.paipk.com" target="_black" title="拍拍看科技">Paipk.com</a>.</p>
 				</div>
 			</div>
 		</div>
