@@ -3,7 +3,7 @@
 <body class="body">
 	<div id="index-body">
 		<div class="section"  id="HomePage">
-			<img src="{$host}zb_users/theme/{$theme}/include/bg1.jpg" alt="" class="bg1">
+			<img src="{$host}zb_users/theme/{$theme}/include/bg1.jpg" alt="{$name}" class="bg1">
 			<div class="HomeBlog">
 				<div class="headerImg" style="background: url({$host}zb_users/theme/{$theme}/include/bg1.jpg) bottom center no-repeat;"></div>
 				<img class="avatarImg" src="{$host}zb_users/theme/{$theme}/include/a.jpg" alt="作者头像">
