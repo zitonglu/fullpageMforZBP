@@ -24,7 +24,7 @@
 <modified>2016-05-06</modified>
 <price></price>
 <advanced>
-  <dependency>sf_img1</dependency>
+  <dependency></dependency>
   <rewritefunctions></rewritefunctions>
   <conflict></conflict>
 </advanced>

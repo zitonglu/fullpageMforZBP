@@ -160,6 +160,7 @@ h2{font-size:20px;}
 }
 .blogtext .title>img:first-child{
     width:80px;
+    height:80px;
     border-radius: 50%;
     float: left;
 }
@@ -317,7 +318,7 @@ h2{font-size:20px;}
     .text1 nav li a{font-size:3vw}
     .blogText1{max-height:2.58em;overflow:hidden;font-size:3.2vw;}
     .control-label-box,.control-input-box,.form-control-box,.control-button-box{font-size:2vh;}
-    .blogtext .title>img:first-child{width: 15.625vw;}
+    .blogtext .title>img:first-child{width: 15.625vw;height: 15.625vw}
     .blogtext .title h1{font-size:5.5vw;margin-left:19vw;}
     .blogtext .title p{margin-left:19vw;font-size: 1.5625vw;}
     .blogtext .title p a,.media-body p{font-size:1.5625vw;}

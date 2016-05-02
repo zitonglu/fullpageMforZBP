@@ -39,8 +39,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">1</div>
-		<div class="section">1</div>
-		<div class="section">1</div>
+		<div class="section">
+		{foreach $articles as $article}
+			{template:post-multi}
+		{/foreach}
+		</div>
 	</div>
 {template:footer}
