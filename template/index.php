@@ -43,6 +43,11 @@
 		{foreach $articles as $article}
 			{template:post-multi}
 		{/foreach}
+		<div class="slide">
+			<div class="pagination-box">
+				{template:pagebar}
+			</div>
+		</div>
 		</div>
 	</div>
 {template:footer}
