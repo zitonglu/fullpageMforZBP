@@ -49,5 +49,8 @@
 			</div>
 		</div>
 		</div>
+<!-- 		<div class="section">
+			$article->id="9999999"
+		</div> -->
 	</div>
 {template:footer}
