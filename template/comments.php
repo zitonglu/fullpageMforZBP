@@ -2,7 +2,6 @@
 {$socialcomment}
 {else}
 
-<div class="more-name">文章评论</div>
 <!--评论框-->
 {template:commentpost}
 <label id="AjaxCommentBegin"></label>
