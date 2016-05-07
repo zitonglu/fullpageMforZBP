@@ -46,7 +46,7 @@
 		</div>
 		<div class="section">
 			{foreach $articles as $article}
-				{template:post-multi}
+			{template:post-multi}
 			{/foreach}
 			<div class="slide">
 				<div class="pagination-box">
@@ -54,8 +54,52 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">
-
+<div class="section">
+	{php}
+	$post = New Post;
+	$post->LoadInfoByID($postid);
+	$page = $page == 0 ? 1 : $page;
+	$pagebar = new Pagebar('javascript:GetComments(\'' . $post->ID . '\',\'{%page%}\')');
+	$pagebar->PageCount = $zbp->commentdisplaycount;
+	$pagebar->PageNow = $page;
+	$pagebar->PageBarCount = $zbp->pagebarcount;
+	{/php}
+	<label id="AjaxCommentBegin"></label>
+	<div class="comments">
+		<aside class="comment-list">
+			{php}
+			$comments = array();
+			$comments = $zbp->GetCommentList('*',array(array('=', 'comm_LogID', $post->ID),array('=', 'comm_RootID', 0),array('=', 'comm_IsChecking', 0),),
+			array('comm_ID' => ($zbp->option['ZC_COMMENT_REVERSE_ORDER'] ? 'DESC' : 'ASC')),
+			array(($pagebar->PageNow - 1) * $pagebar->PageCount, $pagebar->PageCount),
+			array('pagebar' => $pagebar)
+			);
+			$rootid = array();
+			foreach ($comments as $comment) {
+			$rootid[] = array('comm_RootID', $comment->ID);
+			}
+			$comments2 = $zbp->GetCommentList('*',array(array('=', 'comm_LogID', $post->ID),array('array', $rootid),array('=', 'comm_IsChecking', 0),),array('comm_ID' => ($zbp->option['ZC_COMMENT_REVERSE_ORDER'] ? 'DESC' : 'ASC')),null,null);
+			$floorid = ($pagebar->PageNow - 1) * $pagebar->PageCount;
+			foreach ($comments as &$comment) {
+			$floorid += 1;
+			$comment->FloorID = $floorid;
+			$comment->Content = TransferHTML($comment->Content, '[enter]') . '<label id="AjaxComment' . $comment->ID . '"></label>';
+			}
+			foreach ($comments2 as &$comment) {
+			$comment->Content = TransferHTML($comment->Content, '[enter]') . '<label id="AjaxComment' . $comment->ID . '"></label>';
+			}
+			{/php}
+			<!--评论输出-->
+			{foreach $comments as $key => $comment}
+			{template:comment}
+			{/foreach}
+		</aside>
+		<!--评论翻页条输出-->
+		<div class="comments-pagebar">
+			{template:pagebar}
 		</div>
+	</div>
+	<label id="AjaxCommentEnd"></label>
+</div>
 	</div>
 {template:footer}
