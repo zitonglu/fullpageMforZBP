@@ -66,7 +66,18 @@ h2{font-size:20px;}
     height: auto;
     background: rgba(255,255,255,.4);
     border-radius: 50%;
+    -webkit-animation: HandImg 10s linear infinite;
+       -moz-animation: HandImg 10s linear infinite;
+        -ms-animation: HandImg 10s linear infinite;
+         -o-animation: HandImg 10s linear infinite;
+            animation: HandImg 10s linear infinite;
 }
+-webkit-@keyframes HandImg{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);}}
+   -moz-@keyframes HandImg{0%{-moz-transform:rotate(0deg);}100%{-moz-transform:rotate(360deg);}}
+    -ms-@keyframes HandImg{0%{-ms-transform:rotate(0deg);}100%{-ms-transform:rotate(360deg);}}
+     -o-@keyframes HandImg{0%{-o-transform:rotate(0deg);}100%{-o-transform:rotate(360deg);}}
+        @keyframes HandImg{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
 .headerImg{
     height:180px;
 }
