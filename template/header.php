@@ -15,5 +15,4 @@
   {/if}
   <link rel="stylesheet" type="text/css" href="{$host}zb_users/theme/{$theme}/style/{$style}.css?v=1.0" />
 {$header}
-  <!--SEO代码优化-->
   <title>{$title}</title>
