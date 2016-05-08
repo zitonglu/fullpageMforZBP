@@ -5,11 +5,18 @@ RegisterPlugin('fullpagestyle','ActivePlugin_fullpagestyle');
 function ActivePlugin_fullpagestyle()
 {
 	Add_Filter_Plugin('Filter_Plugin_Zbp_Load','fullpagestyle_rebuild_Main');
+	Add_Filter_Plugin('Filter_Plugin_Admin_TopMenu', 'fullpagestyle_AddMenu');
 }
 
 function InstallPlugin_fullpagestyle()
 {
 global $zbp;
+}
+
+function fullpagestyle_AddMenu(&$menus)
+{
+	global $zbp;
+	$menus[] = MakeTopMenu('root', '主题配置', $zbp->host . 'zb_users/theme/fullpagestyle/main.php', '', 'topmenu_fullpagestyle');
 }
 
 //重建模块首先加载项目
@@ -26,7 +33,7 @@ function fullpagestyle_side_comm() {
 	$comments = $zbp->GetCommentList('*', array(array('=', 'comm_RootID', 0)), array('comm_PostTime' => 'DESC'), $i, null);
 	$s = '';
 	foreach ($comments as $comment) {
-		$s .= '<div class="media"><div class="media-left">';
+		$s .= '<div class="media" id="cmt'.$comment->ID.'"><div class="media-left">';
 		$s .= '<a href="'.$comment->Post->Url.'"><img src="'.$comment->Author->Avatar.'" alt="'.$comment->Author->StaticName.'"></a></div>';
 		$s .= '<div class="media-body">';
 		$s .= '<h2>'.$comment->Author->StaticName.'</h2><p>';

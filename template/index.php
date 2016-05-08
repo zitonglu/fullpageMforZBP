@@ -15,8 +15,8 @@
 					<p class="blogText1">{$subname}</p>
 					<div class="content1box">
 					<div class="content1">
-					{$lef=13}
-					<form class="form-horizontal more-margin" id="frmSumbit" target="_black" method="post" action="{$lef.CommentPostUrl}">
+					{$lef=$zbp->GetPostByID($zbp->Config('fullpagestyle')->liuyanID)}
+					<form id="frmSumbit" target="_self" method="post" action="{$lef.CommentPostUrl}">
 					<input type="hidden" name="inpId" id="inpId" value="{$lef.ID}" />
 					<input type="hidden" name="inpRevID" id="inpRevID" value="0" />
 						<div class="content1-list">

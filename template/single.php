@@ -1,3 +1,6 @@
+{if $article.ID==$zbp->GetPostByID($zbp->Config('fullpagestyle')->liuyanID)}
+{template:index}
+{else}
 {template:header}
 </head>
 <body>
@@ -7,3 +10,4 @@
 {template:post-page}
 {/if}
 {template:footer}
+{/if}

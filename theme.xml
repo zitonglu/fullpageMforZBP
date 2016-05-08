@@ -5,8 +5,8 @@
 <url>http://www.paipk.com/</url>
 <note>可以滑动的</note>
 <description>zblogPHP主题“可以滑动的”模版.由蟹胖设计和制作.</description>
-<path></path>
-<include></include>
+<path>main.php</path>
+<include>include.php</include>
 <level>1</level>
 <author>
   <name>蟹胖</name>
@@ -21,7 +21,7 @@
 <adapted>140614</adapted>
 <version>1</version>
 <pubdate>2016-04-29</pubdate>
-<modified>2016-05-06</modified>
+<modified>2016-05-08</modified>
 <price></price>
 <advanced>
   <dependency></dependency>
